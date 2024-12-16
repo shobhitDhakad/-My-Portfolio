@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(to bottom, #f0f4f8, #d9e6f2);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header Styles */
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: bold;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1100px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007BFF;
+        }
+
+        #about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        #about p {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Skills Section */
+        #skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        #skills li {
+            background: #007BFF;
+            color: #fff;
+            margin: 5px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 1rem;
+        }
+
+        /* Projects Section */
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 300px;
+            background: #f9f9f9;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .project h3 {
+            margin: 0;
+            padding: 15px;
+            background: #007BFF;
+            color: #fff;
+            font-size: 1.2rem;
+        }
+
+        .project p {
+            margin: 15px;
+            padding: 10px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* Resume Section */
+        #resume a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        #resume a:hover {
+            background: #0056b3;
+        }
+
+        /* Contact Section */
+        #contact p {
+            margin: 5px 0;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        #contact a {
+            color: #007BFF;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Shobhit Dhakad</h1>
+        <p>Passionate Information Technology Student Exploring the Future of Tech</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="me.jpg" alt="Your Image">
+        <p>Hi, I am Shobhit Dhakad, an Information Technology student with a strong passion for web development, problem-solving, and exploring innovative technologies. I enjoy building functional and visually appealing projects that create an impact.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>React.js</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>MS Office</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="bank.jpeg" alt="Bank Management System">
+                <h3>Bank Management System</h3>
+                <p>This project streamlines banking operations by providing a user-friendly platform for managing customer accounts, transactions, and loan records. For more</p>
+                <p>github: <a href="https://github.com/shobhitDhakad/bank_management_system">bank_management_system</a></p>
+            </div>
+            <div class="project">
+                <img src="land.jpg" alt="Land Ownership">
+                <h3>Land Ownership</h3>
+                <p>This project simplifies the process of registering, transferring, and managing land ownership records. It ensures transparency and security by maintaining a centralized database for ownership details, property history, and legal documentation.</p>
+                <p>github: <a href="https://github.com/shobhitDhakad/land-ownership-system">land-ownership-system</a></p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="resume.pdf" download>Download My Resume</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:shobhitdhakad18@gmail.com">shobhitdhakad18@gmail.com</a></p>
+        <p>Phone: <a href="tel:+6265072243">6265072243</a></p>
+        <p>Linkedin: <a href="https://www.linkedin.com/in/shobhit-dhakad-995763239/">shobhit-dhakad</a></p>
+        GitHub: <a href="https://github.com/shobhitDhakad">Shobhit-Dhakad</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Shobhit Dhakad. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
